@@ -1,0 +1,21 @@
+### Create Transaction
+POST http://localhost:3333/transactions
+Content-Type: application/json
+
+{
+  "title": "Freelancer",
+  "amount": 5000,
+  "type": "credit"
+}
+
+
+### Get all transactions
+GET http://localhost:3333/transactions
+
+
+### Get specific transaction
+GET http://localhost:3333/transactions/f65e577c-cec1-4008-a82a-c5e2cd65c54c
+
+
+### Get Summary
+GET http://localhost:3333/transactions/summary
